@@ -35,12 +35,26 @@ The sidebar is 270px wide.
 Pro-tip. Use the Page Ruler extension to measure the size of elements
 */
 
-head {
-background-color: #ffffff;
-border-color:
-font: "Arial";
-padding: 10px;
-color:
+
+body {
+	width: 650px; 
+	background-image: "assets/images/#";
+}
+
+h1 {
+	background-color: #4aaaa5;
+	border-color: #cccccc;
+	font: "Arial";
+	padding: 10px;
+	color: #777; 
+	width: 200px;
+	height: 50px;
+}
+
+aside {
+	width: 270px; 
+	background-color: #fff; 
+
 }
 
 /*

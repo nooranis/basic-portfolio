@@ -1,41 +1,3 @@
-/*
-Colors: Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on web pages.
-
-Teal color (used for headings and backgrounds): #4aaaa5
-Regular font color (used for paragraphs and all text besides the headings) = #777777
-Main header background color: #ffffff
-Main header border color: #cccccc
-Footer background color: #666666
-Main content background color: #ffffff
-Main content border color: #dddddd
-Fonts
-
-Heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;
-All other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-Profile Image Found on index.html
-
-Use a picture of yourself.
-If you don't have a picture, you can grab a placeholder image from LoremPixel. Save the images to your images folder
-Portfolio Images
-
-Placeholder images can be found LoremPixel.
-Save the images to your images folder
-Social Link Images (Github, LinkedIn and StackOverflow, etc.)
-
-These images can be found on IconFinder.
-Save the images to your images folder
-Background Images
-
-The background pattern used was found on Subtle Patterns. You can browse through that site and find whichever pattern you like.
-Dimensions
-
-The entire content area is 960px wide.
-The main section content is 650px wide.
-The sidebar is 270px wide.
-Pro-tip. Use the Page Ruler extension to measure the size of elements
-*/
-
-
 header {
 	background-color: #fff;
 	background-size: 160px 1024px;
@@ -58,20 +20,22 @@ h1 {
 
 
 body {
-	/*width: 1024px; 
-	height: 680px;
-	background-image: url("../images/background.png");
-	
-	added this to #mainContent
+	/*
+	background image is overflowing above the header and to it's left and right, what's up with that? 
 	*/
 	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif;
 	background-image: url("../images/background.png");
 	background-size: 680px 1024px;
 }
 
+ul {
+	margin-left: 25px
+}
+
 li {
 	display: inline;
 	list-style-type: none; 
+	color: #fff;
 	margin: 0px;
 	padding: 0px;
 	float: right;
@@ -136,18 +100,3 @@ h2 {
 }
 
 /* FOOTER HEIGHT: 120px (about 1/8th of the full height of 960px (width = 1024px) */
-
-/*
-Teal color (used for headings and backgrounds): #4aaaa5
-Regular font color (used for paragraphs and all text besides the headings) = #777777
-Main header background color: #ffffff
-Main header border color: #cccccc
-Footer background color: #666666
-Main content background color: #ffffff
-Main content border color: #dddddd
-Fonts
-
-Heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;
-All other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-Profile Image Found on index.html
-*/

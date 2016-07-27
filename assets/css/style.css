@@ -36,26 +36,105 @@ Pro-tip. Use the Page Ruler extension to measure the size of elements
 */
 
 
-body {
-	width: 650px; 
-	background-image: "assets/images/#";
+header {
+	background-color: #fff;
+	background-size: 160px 1024px;
+
 }
+
 
 h1 {
 	background-color: #4aaaa5;
 	border-color: #cccccc;
-	font: "Arial";
+	border: 1px;
+	font-family: Georgia, Times, 'Times New Roman', serif; 
 	padding: 10px;
 	color: #777; 
 	width: 200px;
-	height: 50px;
+	height: 75px;
+	margin-left: 150px;
 }
 
-aside {
-	width: 270px; 
+
+body {
+	/*width: 1024px; 
+	height: 680px;
+	background-image: url("../images/background.png");
+	
+	added this to #mainContent
+	*/
+	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif; 
+}
+
+li {
+	display: inline;
+	list-style-type: none; 
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+
+li a {
+	display: inline;
+	padding: 10px;
 	background-color: #fff; 
+}
+
+/*
+nav {
+	float: right;	
+}
+
+.mainContent {
+	margin-left: 155px;
+	border: 1px solid #fff;
+}
+
+commented out, moving this to ul 
+*/
+
+/*
+h2 {
+	
+	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif; 
+}
+*/
+
+.mainContent {
+	background-image: url("../images/background.png");
+	background-size: 680px 1024px;
+	float: left;
+}
+
+
+#aboutImage {
+	float: left;
+	margin: 10px;
+}
+
+#aboutContent {
 
 }
+
+/*
+.aboutContent {
+	margin-left: 155px;
+	border: 1px solid #fff;
+}
+*/
+
+.connect {
+	width: 270px; 
+	height: 220px;
+	background-color: #fff; 
+	float: right;
+	margin: 50px 135px 440px 800px; 
+	border: 1px solid ddd;
+	float: left;
+	overflow: auto;
+}
+
+/* FOOTER HEIGHT: 120px (about 1/8th of the full height of 960px (width = 1024px) */
 
 /*
 Teal color (used for headings and backgrounds): #4aaaa5

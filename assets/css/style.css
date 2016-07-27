@@ -48,11 +48,12 @@ h1 {
 	border-color: #cccccc;
 	border: 1px;
 	font-family: Georgia, Times, 'Times New Roman', serif; 
-	padding: 10px;
+	padding: 55px 15px 15px 15px;
 	color: #777; 
-	width: 200px;
+	width: 250px;
 	height: 75px;
 	margin-left: 150px;
+	text-align: center;
 }
 
 
@@ -63,7 +64,9 @@ body {
 	
 	added this to #mainContent
 	*/
-	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif; 
+	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif;
+	background-image: url("../images/background.png");
+	background-size: 680px 1024px;
 }
 
 li {
@@ -93,17 +96,15 @@ nav {
 commented out, moving this to ul 
 */
 
-/*
+
 h2 {
-	
+	margin-left: 150px;
 	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif; 
 }
-*/
 
 .mainContent {
-	background-image: url("../images/background.png");
-	background-size: 680px 1024px;
 	float: left;
+	margin-left: 150px; 
 }
 
 
@@ -113,7 +114,7 @@ h2 {
 }
 
 #aboutContent {
-
+	float: left;
 }
 
 /*
@@ -130,7 +131,7 @@ h2 {
 	float: right;
 	margin: 50px 135px 440px 800px; 
 	border: 1px solid ddd;
-	float: left;
+	float: right;
 	overflow: auto;
 }
 

@@ -1,102 +1,241 @@
-header {
-	background-color: #fff;
-	background-size: 160px 1024px;
+/**
+ * Float Layout Activity 
+ **/
 
+* {
+  box-sizing: border-box;
+  text-align: center;
 }
 
 
-h1 {
-	background-color: #4aaaa5;
-	border-color: #cccccc;
-	border: 1px;
-	font-family: Georgia, Times, 'Times New Roman', serif; 
-	padding: 55px 15px 15px 15px;
-	color: #777; 
-	width: 250px;
-	height: 75px;
-	margin-left: 150px;
-	text-align: center;
-}
 
 
 body {
-	/*
-	background image is overflowing above the header and to it's left and right, what's up with that? 
-	*/
-	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif;
-	background-image: url("../images/background.png");
-	background-size: 680px 1024px;
+  font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif;
+}
+
+header {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #fff;  
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#hidden {
+  background-color: #fff; 
+  width: 10%;
+  float: left;
+}
+
+#tealName {
+  background-color: #4aaaa5;
+  width: 20%;
+  float: right;
+  color: #fff;
+  }
+
+#navLinks {
+  background-color: #fff;
+  width: 70%;
+  float: right;
+  color: #777; 
 }
 
 ul {
-	margin-left: 25px
+  margin-left: 25px
 }
 
 li {
-	display: inline;
-	list-style-type: none; 
-	color: #fff;
-	margin: 0px;
-	padding: 0px;
-	float: right;
+  display: inline;
+  list-style-type: none; 
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  float: right;
 }
 
 li a {
-	display: inline;
-	padding: 10px;
-	background-color: #fff; 
+  display: inline;
+  padding: 10px;
+  background-color: #fff; 
 }
+
+#mainContent {
+  background-image: url("../images/background.png");
+  color: #333;
+  width: 100%; 
+  clear: all;
+  height: 500px;
+  overflow: auto;
+  border-top: 1px solid #4aaaa5;
+}
+
+#contentNames {
+  margin-top: 5px;
+  color: #4aaaa5;
+  align: left;
+  border-bottom: 2px solid #ddd;
+  text-align: left;
+}
+
+#aboutMe {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  width: 650px;
+  height: 350px;
+  margin: 25px 0 0 133px;
+  position: relative;
+  overflow: auto;
+}
+
+#aboutImg {
+  float: left;
+  height: 150px; 
+  width: 75px;
+  /*position: relative;*/
+}
+
+#aboutContent {
+  overflow: auto;
+}
+
+aside {
+  float: right;
+  background-color: #fff;
+  width: 33.3%;
+  color: #333;
+  margin: 25px 100px 0 0;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid #eee;
+}
+
+footer {
+  background: #ccc;
+  padding: 10px; 
+  clear: both;
+  height: 50px;
+}
+
+
+
+
+
+/*
+
+STARTED OVER - KEEPING THIS MESS FOR NOW 
+
+header {
+  background-color: #fff;
+  background-size: 160px 1024px;
+}
+
+.tealName {
+  background-color: #4aaaa5;
+  border-color: #cccccc;
+  border: 1px;
+  font-family: Georgia, Times, 'Times New Roman', serif; 
+  padding: 55px 15px 15px 15px;
+  color: #777; 
+  width: 250px;
+  height: 50px;
+  margin-left: 150px;
+  text-align: center;
+}
+
+body {
+  /*
+  background image is overflowing above the header and to it's left and right, what's up with that? 
+  */
+  
+  /*font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif;
+  /*background-image: url("../images/background.png");*/
+  /*background-size: 680px 1024px;
+  border-top: 3px solid #ddd; 
+}
+
+ul {
+  margin-left: 25px
+}
+
+li {
+  display: inline;
+  list-style-type: none; 
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+
+li a {
+  display: inline;
+  padding: 10px;
+  background-color: #fff; 
+}
+
 
 /*
 nav {
-	float: right;	
+  float: right; 
 }
 
 .mainContent {
-	margin-left: 155px;
-	border: 1px solid #fff;
+  margin-left: 155px;
+  border: 1px solid #fff;
 }
 
 commented out, moving this to ul 
 */
 
 
-h2 {
-	margin-left: 150px;
-	font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif; 
+/*h2 {
+  margin-left: 150px;
+  font-family: Arial, Helvetica, 'Helvetica Nue', sans-serif; 
 }
 
 .mainContent {
-	float: left;
-	margin-left: 150px; 
+  float: left;
+  margin-left: 150px; 
+  clear: both;
+  overflow: auto;
+  width: 650px;
 }
 
 
 #aboutImage {
-	float: left;
-	margin: 10px;
+  float: left;
+  width: 216px;
+  height: 175px;
+  margin: 0px 10px 10px 0px;
 }
 
 #aboutContent {
-	float: left;
+  float: left;
 }
 
 /*
 .aboutContent {
-	margin-left: 155px;
-	border: 1px solid #fff;
+  margin-left: 155px;
+  border: 1px solid #fff;
 }
 */
 
-.connect {
-	width: 270px; 
-	height: 220px;
-	background-color: #fff; 
-	float: right;
-	margin: 50px 135px 440px 800px; 
-	border: 1px solid ddd;
-	float: right;
-	overflow: auto;
+/*.connect {
+  width: 270px; 
+  height: 220px;
+  background-color: #fff; 
+  float: right;
+  margin: 50px 135px 440px 800px; 
+  border: 1px solid #ddd;
+  float: right;
+  overflow: auto;
 }
 
 /* FOOTER HEIGHT: 120px (about 1/8th of the full height of 960px (width = 1024px) */
+

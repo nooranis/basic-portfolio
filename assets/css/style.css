@@ -89,6 +89,7 @@ li a {
   overflow: auto;
   position: relative;
   float: right;
+  right: 0;
 }
 
 footer {
@@ -99,9 +100,11 @@ footer {
 }
 
 #contactPage {
-  margin-top: 30px;
+  margin-top: 35px;
   color: #4aaaa5;
-  align: left;
+  left: 0;
+  display: inline-block;
+  width: 100%;
 }
 
 #contentNames {
